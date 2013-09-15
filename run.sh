@@ -33,6 +33,13 @@ copyFile(){
 	cp tmp/temp_file.txt $FILENAME
 }
 
+# ###############################################################
+# Remove all " characters from the file.
+#
+removeQuotes(){
+	sed -i .orig -e 's/\"//g' tmp/temp_file.txt
+}
+
             
 while [[ $1 == -* ]]; do
   case "$1" in
@@ -83,6 +90,7 @@ if [ "$COMPANY" = "volcom" ]; then
 	else
 		# print to tmp file
 		bin/transform_volcom.awk $FILE > tmp/temp_file.txt
+		removeQuotes
 		copyFile
 	fi
 fi
@@ -97,6 +105,7 @@ if [ "$COMPANY" = "electric" ]; then
 	else
 		# print to tmp file
 		bin/transform_electric.awk $FILE > tmp/temp_file.txt
+		removeQuotes
 		copyFile
 	fi
 fi
