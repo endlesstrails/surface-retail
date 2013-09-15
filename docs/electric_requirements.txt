@@ -1,0 +1,33 @@
+I want to get you started on the conversion for the second company we import from (Electric).  I dumped their file from our Full Circle system and ran it thru your program.  I have attached the raw step 0 file (UPC.txt, and the output (KWI-VOl***) to this email.  It appears to work pretty well but I would need a few “Tweaks” made.  
+
+If you look at the converted Output  File I have attached I inserted a record at the top 3 lines above the converted records.  This first record is a Duplicate of the first record on line 5 except for I manually changed the fields that need to be updated.  
+Second field is “1” on line 5, should be “2”.  
+3rd field was “53”, should be “25”, 
+5th Field was EA35, should be A35. 
+
+Fields 2 and 3 are always the value mentioned above, 2 and 25.  
+
+Field 5 needs coding logic to convert all the values as follows:
+ 
+EA## (Ex: EA01) thru EF## (ex: EF52) drop the E at the start and convert to A## (Ex: A01) thru F## (F52).  So EA, EB, EC, ED, EE, EF## records all drop the E.
+All EG## Values convert to EG (Drop 2 ending digits)
+All EH## Values convert to EH
+All EL## Values Convert to EL
+All EM## Convert to EM
+All ES## Convert to ES
+All ET## Convert to ET
+All EV## Convert to EV
+All EX## convert to EX
+All EY## Convert to EY
+All EZ## Convert to EZ
+ 
+So we will want a second process to run against these files separately to convert as mentioned above.
+
+--------------------
+
+Field 5 needs coding logic to convert all the values as follows:
+ 
+All EV## Convert to ES
+All EY## Convert to ES
+ 
+Right now they just convert to EV or EY.
