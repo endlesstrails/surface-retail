@@ -1,0 +1,11 @@
+# ###################################################
+# RELEASE NOTES v4
+# ###################################################
+
+# Updated to add the following columns to the Volcom
+# output file
+# 
+# 1. Labeled Cost = column 19 of the input file.
+#
+# 2. Calculated Price = column 16 of the input file
+#    multiplied by .55
