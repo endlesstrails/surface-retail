@@ -37,7 +37,7 @@ copyFile(){
 # Remove all " characters from the file.
 #
 removeQuotes(){
-	sed -i .orig -e 's/\"//g' tmp/temp_file.txt
+	sed -i.orig s/\"//g tmp/temp_file.txt
 }
 
             
@@ -83,6 +83,8 @@ echo "Processing $FILE"
 if [ "$COMPANY" = "volcom" ]; then
 	echo "Processing with volcom logic"
 	if [ "$OUTPUTFILE" != "" ]; then
+		# Remove quote characters from the file
+		sed -i s/\"//g $FILE
 		# print to console
 		bin/transform_volcom.awk $FILE
 		echo "Process complete"
@@ -98,6 +100,8 @@ fi
 if [ "$COMPANY" = "electric" ]; then
 	echo "Processing with electric logic"
 	if [ "$OUTPUTFILE" != "" ]; then
+		# Remove quote characters from the file
+		sed -i s/\"//g $FILE
 		# print to console
 		bin/transform_electric.awk $FILE
 		echo "Process complete"
