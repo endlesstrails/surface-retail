@@ -37,7 +37,7 @@ copyFile(){
 # Remove all " characters from the file.
 #
 removeQuotes(){
-	sed -i.orig s/\"//g tmp/temp_file.txt
+	sed -b -i.orig s/\"//g tmp/temp_file.txt
 }
 
             
