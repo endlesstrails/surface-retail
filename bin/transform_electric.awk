@@ -116,11 +116,19 @@ BEGIN {
 		}
 				
 		season=substr($18, length($18) - 1) suffix
+
+		# Labeled Cost
+		labledCost=""
+		labledCost=$19
+
+		# Calculated Price
+		cPrice="0.00"
+		#cPrice=$16*.55
 		
 		# ###########
 		# Print File
 		#
-			printf "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%.2f|%.2f|%s|%s\r\n", 
+			printf "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%.2f|%.2f|%s|%s|%s|%s\r\n", 
 			substr($10, 0, length($10) - 1) 	    \
 			, "2"									\
 			, "25"									\
@@ -137,6 +145,8 @@ BEGIN {
 			, rPrice   								\
 			, season	                        	\
 			, d 									\
+			, labledCost							\
+			, cPrice								\			
 		}
 	}
 	
