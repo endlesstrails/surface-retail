@@ -146,7 +146,7 @@ BEGIN {
 			, season	                        	\
 			, d 									\
 			, labledCost							\
-			, cPrice								\			
+			, cPrice								\
 		}
 	}
 	
