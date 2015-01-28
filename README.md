@@ -30,10 +30,10 @@ From there, you can run the file.  The parameter that you pass to the file is th
 ```
 
 ### Options:
-| -f | --file	|		Pass the input file as an argument on the command line.
-| -c | --company |		Pass the company name for which this file will be prepared (volcom|electric).
-| -t | --transfer |		Pass -t or --transfer as an additional argument to transfer the file via ftp.
-| -o | --output |		Pass -o or --output to print the results to the console instead of the output file (for debugging purposes).
+| -f | --file	|		Pass the input file as an argument on the command line. |
+| -c | --company |		Pass the company name for which this file will be prepared [volcom,electric]. |
+| -t | --transfer |		Pass -t or --transfer as an additional argument to transfer the file via ftp. |
+| -o | --output |		Pass -o or --output to print the results to the console instead of the output file (for debugging purposes). |
 
 When processing is complete, it will place the output file in the root Surface_Retail_v2 Directory.
 
