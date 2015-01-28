@@ -7,7 +7,7 @@ This process converts a properly formatted input file to the KWI-VOLCOM-ARTICLE-
 It performs two different sets of logic depending on the specified company parameter
 It uses POSIX standard programming tools (mostly awk) and is platform independent.
 
-### Releae Notes
+### Release Notes
 
 Minor enhancement to field 5 calculations.
 - All EV## Convert to ES
@@ -29,8 +29,8 @@ From there, you can run the file.  The parameter that you pass to the file is th
 ./run.sh -f inputFileName.txt -c volcom
 ```
 
- Options: |
- -|-
+ Options: | |
+ -|-|-
     -f | --file	|		Pass the input file as an argument on the command line.
     -c | --company |		Pass the company name for which this file will be prepared (volcom|electric).
     -t | --transfer |		Pass -t or --transfer as an additional argument to transfer the file via ftp.
