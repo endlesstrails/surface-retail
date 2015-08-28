@@ -1,6 +1,6 @@
 
 # Surface Retail EDI Processes 
-### v3.0
+### v4.2
 @author jamesjreynolds@gmail.com
 
 This process converts a properly formatted input file to the KWI-VOLCOM-ARTICLE-yyMMdd-HHmmSS.TXT format.

@@ -106,7 +106,7 @@ BEGIN {
 		# ###########
 		# Print File
 		#
-			printf "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%.2f|%.2f|%s|%s|%s|%.2f\r\n", 
+			printf "%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%s|%.2f|%.2f|%s|%s|%s|%.2f|%.2f\r\n", 
 			substr($10, 0, length($10) - 1) 	    \
 			, "1"									\
 			, $3									\
@@ -125,6 +125,7 @@ BEGIN {
 			, d 									\
 			, labledCost							\
 			, cPrice								\
+			, rPrice   								\
 		}
 	}
 	
