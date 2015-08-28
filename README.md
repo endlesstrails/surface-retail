@@ -9,6 +9,10 @@ It uses POSIX standard programming tools (mostly awk) and is platform independen
 
 ### Release Notes
 
+#### v4.2
+Minor enhancement to copy field 14 value to field 19 value on Volcom output file.
+
+#### v4.1
 Minor enhancement to field 5 calculations.
 - All EV## Convert to ES
 - All EY## Convert to ES
