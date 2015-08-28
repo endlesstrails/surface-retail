@@ -1,6 +1,17 @@
 # ###################################################
-# RELEASE NOTES v4
+# RELEASE NOTES
 # ###################################################
+
+# ###################################################
+# Version 4.1
+# 
+
+# Added v4 changes to electric logic
+
+
+# ###################################################
+# Version 4
+# 
 
 # Updated to add the following columns to the Volcom
 # output file
